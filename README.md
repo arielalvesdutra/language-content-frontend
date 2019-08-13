@@ -1,29 +1,11 @@
-# language-content
+# Language Content - Frontend
 
-## Project setup
-```
-npm install
-```
+Esse projeto se destina à: 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- prover o cadastro de linguagens e conteúdos
+- vincular conteúdos às linguagens
+- acompanhar o status do aprendizado dos conteúdos vinculados a uma linguagem
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Framework
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+VueJs.
