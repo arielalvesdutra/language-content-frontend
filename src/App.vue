@@ -1,39 +1,50 @@
 <template>
   <div id="app">
-    <div>
-
-    <img alt="Vue logo" src="./assets/language-icon-01.png">
+    <Header />
+    <div class="menu-and-content">
+      <MenuLeftAside />
+      <router-view></router-view>
     </div>
-    <HelloWorld msg="Senha bem vindo ao Language Content"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "./pages/templates/Header";
+import MenuLeftAside from "./pages/templates/MenuLeftAside";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    Header,
+    MenuLeftAside
   }
-}
+};
 </script>
 
 <style>
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "courier";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-#app > img {
-  height: 400px;
+.menu-and-content {
+  flex: 1;
+  display: flex;
 }
 
 </style>
