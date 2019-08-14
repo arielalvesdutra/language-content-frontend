@@ -3,17 +3,19 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/">
+          <router-link to="/" :class="{ 'active': $route.path === '/'}">
             Página inicial
           </router-link>
         </li>
         <li>
-          <router-link to="/languages">
+          <router-link to="/languages" 
+              :class="{ 'active': $route.path === '/languages'}">
             Linguagens de Programação
           </router-link>
         </li>
         <li>
-          <router-link to="/contents">
+          <router-link to="/contents"
+              :class="{ 'active': $route.path === '/contents'}">
             Conteúdos
           </router-link>
         </li>
@@ -26,7 +28,7 @@
 export default {
   name: 'MenuLeftAside',
       data: () => ({
-      menuVisible: false
+        menuVisible: false,
     }),
     methods: {
       toggleMenu () {
@@ -57,11 +59,17 @@ ul li a {
   padding: 15px 10px;
 }
 
+ul li a.active {
+  /* background-color: #2b9968; */
+  background-color: #1d8053;
+}
+
 ul li a:hover {
   
   /* background-color: #74bb9b; */
   background-color: #8bdfb9;
 }
+
 
 .menu-left-aside {
   background-color: #4fc08d;

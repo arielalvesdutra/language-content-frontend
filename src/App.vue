@@ -22,8 +22,15 @@ export default {
 </script>
 
 <style>
+
+html {
+  overflow-y: auto;
+}
+
 body {
+  background-color: rgb(251, 251, 251);
   margin: 0;
+  
 }
 
 h1 {
@@ -34,7 +41,8 @@ h1 {
   font-family: "courier";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  /* color: #2c3e50; */
+  color: #444;
 
   height: 100vh;
 

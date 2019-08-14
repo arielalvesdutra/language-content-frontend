@@ -1,19 +1,20 @@
 <template>
   <ContentPageTemplate 
     title="Conteúdos" subtitle="Listagem de Conteúdos">
-    Content page...
+    <ContentList />
   </ContentPageTemplate>
 </template>
 
 <script>
 import ContentPageTemplate from '@/pages/templates/ContentPageTemplate'
+import ContentList from '@/components/contents/ContentList'
+
 export default {
   name: 'ContentPage',
   components: {
-    ContentPageTemplate
-  },
-  
-
+    ContentPageTemplate,
+    ContentList
+  }
 }
 </script>
 

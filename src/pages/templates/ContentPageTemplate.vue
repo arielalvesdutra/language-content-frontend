@@ -18,7 +18,6 @@ export default {
 
 <style>
 .content {
-  background-color: #eee;
   flex: 1;
 
   padding: 30px 20px 20px 30px;
@@ -28,6 +27,23 @@ export default {
   border: 1px solid #444;
   /* border: 1px solid #4fc08d; */
   /* border: 1px solid #2c3e50; */
+}
+
+.content > h1 {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.content > h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .content-container {

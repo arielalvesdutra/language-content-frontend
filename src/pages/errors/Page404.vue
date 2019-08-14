@@ -17,8 +17,8 @@ export default {
   data: () => {
     return {
       title: '404',
-      titleMessage: '404 - Página não encontrada',
-      subtitle: 'Página não encontrada',
+      titleMessage: 'Erro',
+      subtitle: '404 - Página não encontrada',
       description: 'Oops... A página que você está procurando não foi encontrada!'
     }
   }
@@ -28,7 +28,7 @@ export default {
 <style>
 
 .error-404-title {
-  font-size: 8.5rem;
+  font-size: 9.5rem;
   margin: 35px 0;
 }
 
