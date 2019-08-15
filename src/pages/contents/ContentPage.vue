@@ -1,18 +1,18 @@
 <template>
-  <ContentPageTemplate 
+  <ContentSection 
     title="Conteúdos" subtitle="Listagem de Conteúdos">
     <ContentList />
-  </ContentPageTemplate>
+  </ContentSection>
 </template>
 
 <script>
-import ContentPageTemplate from '@/pages/templates/ContentPageTemplate'
+import ContentSection from '@/pages/templates/ContentSection'
 import ContentList from '@/components/contents/ContentList'
 
 export default {
   name: 'ContentPage',
   components: {
-    ContentPageTemplate,
+    ContentSection,
     ContentList
   }
 }

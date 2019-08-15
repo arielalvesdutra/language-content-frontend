@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'ContentPageTemplate',
+  name: 'ContentSection',
   props: [ 'subtitle', 'title' ]
 }
 </script>

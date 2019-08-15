@@ -29,12 +29,7 @@ export default {
   name: 'MenuLeftAside',
       data: () => ({
         menuVisible: false,
-    }),
-    methods: {
-      toggleMenu () {
-        this.menuVisible = !this.menuVisible
-      }
-    }
+    })
 }
 </script>
 

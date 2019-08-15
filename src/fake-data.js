@@ -19,3 +19,9 @@ export const languages = [
   { id: 4, name: 'CSS 3' },
   { id: 5, name: 'Javascript' }
 ]
+
+
+export const languagesHeader = [
+  { text: 'Linguagens', sortable: true, value: 'name', align: 'start' },
+  { text: 'Ações', sortable: false, value: 'action', align: 'end' },
+]

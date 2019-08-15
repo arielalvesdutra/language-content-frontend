@@ -1,18 +1,18 @@
 <template>
-  <ContentPageTemplate
+  <ContentSection
       :title="titleMessage" :subtitle="subtitle">
     <h3 class="error-404-title">{{ title }}</h3>
     <p class="error-404-description">{{ description }}</p>
-  </ContentPageTemplate>
+  </ContentSection>
 </template>
 
 <script>
-import ContentPageTemplate from '@/pages/templates/ContentPageTemplate'
+import ContentSection from '@/pages/templates/ContentSection'
 
 export default {
   name: 'Page404',
   components: {
-    ContentPageTemplate
+    ContentSection
   },
   data: () => {
     return {

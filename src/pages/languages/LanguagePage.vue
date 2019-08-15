@@ -1,18 +1,22 @@
 <template>
-  <ContentPageTemplate 
+  <ContentSection 
       title="Linguagens" subtitle="Listagem de Linguagens">    
 
-  </ContentPageTemplate>
+      <LanguageList />
+  </ContentSection>
 </template>
 
 <script>
-import ContentPageTemplate from '@/pages/templates/ContentPageTemplate'
+import ContentSection from '@/pages/templates/ContentSection'
+import LanguageList from '@/components/languages/LanguageList'
+
 import { mapState } from 'vuex'
 
 export default {
   name: 'LanguagePage',
   components: {
-    ContentPageTemplate
+    LanguageList,
+    ContentSection
   },
   computed: mapState([  ])
 }
